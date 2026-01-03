@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ads Calculator</title>
+    <style>
+        body { font-family: Arial; padding: 20px; }
+        input, button { padding: 10px; margin: 5px; }
+    </style>
+</head>
+<body>
+    <h1>GR Ads Calculator</h1>
+    <input type="number" id="budget" placeholder="الميزانية">
+    <button onclick="calculate()">احسب</button>
+    <p id="result"></p>
+    
+    <script>
+        function calculate() {
+            const budget = document.getElementById('budget').value;
+            const result = budget * 0.3; // مثال: 30% ربح
+            document.getElementById('result').innerHTML = 
+                `الربح المتوقع: ${result} جنيه`;
+        }
+    </script>
+</body>
+</html>
